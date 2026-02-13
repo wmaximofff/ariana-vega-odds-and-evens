@@ -37,19 +37,12 @@ function createNumberElement(num) {
 
 function createNumberSection(title, numbers) {
   const section = document.createElement("section");
-  
-
   section.innerHTML = `<h2>${title}</h2>`;
   
-
   const output = document.createElement("output");
   
-
   const numberElements = numbers.map(createNumberElement);
-  
-
   output.append(...numberElements);
-  
   section.appendChild(output);
   return section;
 }
